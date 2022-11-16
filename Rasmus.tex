@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{mathabx}
+\usepackage[shortlabels]{enumitem}
+
+\title{Take-home-eksamen i DM500}
+\author{Hold 7 Studiegruppe 3.1 \\ Rasmus Burkarl Pedersen, rpede22}
+\date{20. November 2022}
+
+\begin{document}
+
+\maketitle
+
+\section{Opgave 1}
+\begin{enumerate}[a)]
+    \item {Hvilke af følgende udsagn er sande?}
+\end{enumerate}
+
+\begin{enumerate} \centering
+    \item $ \forall x \in \mathbb{N} : \exists y \in \mathbb{N} : x>y$
+    \item $ \forall x \in \mathbb{N} : \exists ! y \in \mathbb{N} : x>y$
+    \item $ \exists y \in \mathbb{N} : \forall x \in \mathbb{N} : x>y$
+\end{enumerate}
+    
+\subsection{Svar:}
+Nummer 1 er falsk, fordi hvis man sætter $x=0$, så er der ikke noget y der er mindre.
+\\
+Nummer 2 er falsk, da man godt kan finde flere y'er der er mindre end nogle x'er.
+\\
+Nummer 3 er falsk, da det skal gælde for alle x'er for et bestemt y og man kan altid finde et x, der er større.
+
+\subsection{Opgave 2}
+\begin{enumerate}[b)]
+    \item Angiv negeringen af udsagn 1 fra første spørgsmål
+\end{enumerate}
+Den så således ud:
+\[ \forall x \in \mathbb{N} : \exists y \in \mathbb{N} : x>y\]
+
+\subsubsection{Svar - Negerings-operatoren må ikke indgå udsagnet:}
+Dermed bliver det altså:
+\[ \exists x \in \mathbb{N} : \forall y \in \mathbb{N} : x \not> y\]
+
+\end{document}
