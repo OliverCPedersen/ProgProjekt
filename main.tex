@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{DM500 take home eksamen}
+\author{Oliver Coppock Pedersen}
+\date{November 2022}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1.4ex}
+\usepackage[danish]{babel}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\maketitle
+
+\section{Eksamen 2009 opgave 3}
+Opgaven går ud på at betragte mængden S = \verb|{1, 2, 3, 4, ..., 15}|, samt den binære relation på S som er defineret ved:
+\begin{equation}
+    R = \verb|{|(a, b) | b = 2a\verb|}|
+\end{equation}
+Samtidig blev det efterspurgt, som en del af takehome-eksamenen, at matrixen for S blev optegnet - dog med S indskrænket til S = \verb|{1, 2, ..., 6}|. Denne er opskrevet herunder i Tabel \ref{tabel:S}
+
+\begin{table}[h!]
+\centering
+    
+\begin{tabular}{|c||c|c|c|c|c|c|}
+    \hline
+     & 1 & 2 & 3 & 4 & 5 & 6 \\
+     \hline
+    \hline
+    1 & 0& 0& 0& 0& 0& 0 \\
+    \hline
+    2 & 1& 0& 0& 0& 0& 0\\
+    \hline
+    3 & 0& 0& 0& 0& 0& 0\\
+    \hline
+    4 & 0& 1& 0& 0& 0& 0\\
+    \hline
+    5 & 0& 0& 0& 0& 0& 0\\
+    \hline
+    6 & 0& 0& 1& 0& 0& 0\\
+    \hline
+    
+\end{tabular}
+\caption{opskrivning af indskrænket S}
+\label{tabel:S}
+\end{table}
+\subsection{Delopgave a)}
+Denne delopgave går ud på at betragte følgende par 
+\begin{center}
+    (1, 1),(2, 4), (4, 2), (3, 5), (2, 8)
+\end{center}
+Ud fra disse par skulle opskrives hvilke par der var en del af relationen R, og samtidig også hvilke der var en del af $R^2$. \\ \\
+
+Den eneste af de opstillede par, hvor element 2 er dobbelt så stor som element 1 er (2, 4), og denne er derved den eneste af parrene, som er en del af R. \\ \\
+
+For at finde ud af hvilke af parrene, som er en del af $R^2$ skal man bare det par, hvor element 2 er dobbelt så stor som det tal, som er dobbelt så stor som element 1 - altså, element 2 er fire gange så stort som element 1. Der er kun et par, som opfylder dette, nemlig parret (2, 8), da det dobbelte af 2 er 4 og det dobbelte af 4 er 8. \\ \\
+
+Da vi herved har fundet det eneste par som er en del af R, nemlig (2, 4) og det eneste par der er en del af $R^2$, nemlig (2, 8), er delopgave a) altså løst.
+
+\subsection{Delopgave b)}
+Denne delopgave går ud på at opskrive den transitive lukning af R. \\ \\
+
+Det er værd at huske, transitiv betyder, at hvis relationen indeholder parret (a, b) og (b, c), skal den også indeholde parret (a, c). \\ Samtidig husker vi også, at en transitiv lukning er mængden af par der mangler i en relation, for at denne relation er transitiv. \\ \\
+
+Vi kan derfor først opskrive de par som er indeholdt i R, for derefter at finde dem som skal til, for at R er transitiv. De par, som er indeholdt i R er: \\ \\
+
+\begin{center}
+    (1, 2), (2, 4), (3, 6), (4, 8), (5, 10), (6, 12), (7, 14)
+\end{center}
+
+Ud fra denne opskrivning kan det observeres, at den transitive lukning må indeholde parrene:
+
+\begin{center}
+    (1, 4), (1, 8), (2, 8), (3, 12)
+\end{center}
+
+Da vi ved foreningen af R og mængden som indeholder disse par, har en transitiv relation. Opgaven er derfor løst.
+
+\end{document}
