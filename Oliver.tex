@@ -7,7 +7,7 @@
 \setlength{\parindent}{0em}
 \setlength{\parskip}{1.4ex}
 \usepackage[danish]{babel}
-\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
 
 \begin{document}
 
@@ -76,5 +76,31 @@ Ud fra denne opskrivning kan det observeres, at den transitive lukning må indeh
 \end{center}
 
 Da vi ved foreningen af R og mængden som indeholder disse par, har en transitiv relation. Opgaven er derfor løst.
+
+\subsection{Delopgave a)}
+
+I denne opgave skulle vi finde ud af, om funktionen f er en bijektion. \\
+Vi husker at en funktion er bijektiv, hvis og kun hvis den er både injektiv og surjektiv. \\
+Ud fra dette husker vi, at en funktion er injektiv så længe f(a) = f(b), så ved vi at a = b. Dette betyder, at to forskellige startværdier ikke kan give den samme funktionsværdi. \\
+
+Vi kan se på funktionens definition f, at denne ikke kan være injektiv, da f(1) og f(-2) giver det samme, bevist herunder:
+
+\begin{equation}
+    \begin{aligned}
+        f(1) & = 1^2 + 1 + 1 \\
+        & = 3 \\ \\
+        f(-2) &= (-2)^2 - 2 + 1 \\
+        & = 4 - 2 + 1 \\
+        & = 3
+    \end{aligned}
+\end{equation}
+
+Siden f ikke er injektiv, kan denne heller ikke være bijektiv.
+
+\subsection{Delopgave b)}
+
+I denne opgave skulle vi finde ud af, om funktionen f har en invers funktion. \\
+Vi husker, at en invers funktion er en funktion, som finder værdien a ud af værdien af f(a) \\
+Mere vigtigt, husker vi at en invers funktion kun kan findes, hvis den originale funktion er bijektiv. Siden f ikke er bijektiv, kan vi ikke finde en invers funktion $f^{-1}$
 
 \end{document}
